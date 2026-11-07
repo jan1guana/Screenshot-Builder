@@ -1,0 +1,129 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+  background-color: #b31d12;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  color: white;
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+.image-attributes {
+  color: white;
+}
+p {
+  margin: 0;
+}
+
+.container {
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  position: relative;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.form {
+  padding: 15px;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: #f78279;
+  width: 300px;
+  list-style-type: none;
+  color: black;
+}
+
+.button {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #3e3e3e;
+}
+
+button {
+  border-radius: 8px;
+    border: 1px solid transparent;
+    padding: .6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color .25s;
+}
+
+.screenshot {
+  max-width: 90%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
